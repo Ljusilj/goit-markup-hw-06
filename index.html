@@ -49,7 +49,7 @@
 
   <main>
     <!-- Section Hero -->
-    <section class="hero" >
+    <section class="hero">
       <div class="container">
         <h1 class="main-title style-title">Effective Solutions for Your Business</h1>
         <button class="btn-order-service" type="button" data-modal-open>Order Service</button>
@@ -391,15 +391,55 @@
           </li>
         </ul>
       </div>
+      <div>
+        <p class="footer-text-contact">Subscribe</p>
+        <form action="" class="footer-form-contact">
+          <label for="">
+            <input type="email" placeholder="E-mail">
+          </label>
+        </form>
+      </div>
+      <button type="submit" class="footer-btn">Subscribe
+        <svg class="footer-btn-icon" width="24" height="20">
+          <use href="./images/icons.svg#plane"></use>
+        </svg>
+      </button>
     </div>
   </footer>
+
+  
+  <!-- Backdrop and modal -->
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
-<svg class="modal-close-btn-icon" width="8" height="8">
-  <use href="./images/icons.svg#close"></use>
-</svg>
+        <svg class="modal-close-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
       </button>
+      <div class="modal-content">
+        <form action="" class="modal-form">
+          <p class="modal-text">Leave your contacts and we will call you back</p>
+          <label for=""><span class="modal-form-text">Name</span> 
+            <input class="modal-form-input" type="text"
+            />
+          </label>
+          <label for=""> <span class="modal-form-tx">Phone</span> 
+            <input class="modal-form-input" type="tel">
+          </label>
+          <label for=""> <span class="modal-form-tx">Email</span> 
+            <input class="modal-form-input" type="email">
+          </label>
+          <label for=""><span class="modal-form-tx">Comment</span> 
+            <textarea class="modal-form-comment" name="comment" id="" placeholder="Text input"></textarea>
+          </label>
+          <label for="">
+            <input type="checkbox"> <span class="modal-form-desc"> I accept the terms and conditions of the Privacy Policy</span>
+          </label>
+          <button class="modal-btn-send" type="submit">Send</button>
+        </form>
+      </div>
+
     </div>
   </div>
   <script src="./css/js/modal.js"></script>

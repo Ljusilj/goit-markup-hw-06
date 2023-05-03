@@ -54,6 +54,7 @@ button {
 
 .container {
   width: 1158px;
+
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -430,13 +431,12 @@ button {
 /* ------Footer------ */
 .footer {
   background-color: var(--color-link);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
 }
 
 .studio-logotype {
   display: inline-block;
-  margin-bottom: 16px;
   color: var(--color-footer);
 }
 
@@ -474,7 +474,7 @@ button {
 .main-footer-content {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  /* gap: 120px;   */
 }
 
 .footer-list {
@@ -486,14 +486,17 @@ button {
 .footer-content-logo {
   width: 264px;
   height: 112px;
-  margin-left: 156px;
+  /* margin-left: 156px; */
+  margin-top: 100px;
   margin-bottom: 100px;
-  gap: 120px;
+  margin-right: 120px;
+  /* gap: 120px; */
 }
 
 .footer-content-icons {
   width: 208px;
   height: 80px;
+  margin-right: 88px;
 }
 
 .social-list-link:hover,
@@ -514,6 +517,45 @@ button {
   border-radius: 50%;
   background-color: var(--color-logo);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-text-contact {
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-transform: initial;
+}
+
+.footer-form-contact {
+  width: 264px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 16px;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-btn {
+  margin-left: 24px;
+  display: block;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  background-color: #4D5AE5;
+  font-family: var(--primery-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.footer-btn-icon {
+  fill: var(--color-white);
 }
 
 /*------ Portfolio------ */
@@ -658,6 +700,7 @@ button {
   transform: translate(0, 100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .overlay:hover {
   transform: translate(0, 100%);
 }
@@ -691,7 +734,7 @@ button {
 
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: var(--color-modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -700,6 +743,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal:hover {
@@ -733,4 +777,80 @@ button {
 
 .modal-close-btn:hover .modal-close-btn-icon .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--color-text);
+}
+
+.modal-form {}
+
+.modal-content {
+  margin-top: 72px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.modal-text {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-link);
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid  rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding-top: 14px;
+  padding-left: 19px;
+  
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  padding-top: 8px;
+  padding-left: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+}
+.modal-form-desc {
+  font-family: var(--primery-font);
+  font-size: 12px;
+  color: var(--color-customers);
+  margin-left: 4px;
+}
+.modal-btn-send {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  width: 169px;
+  height: 56px;
+  background-color: #4D5AE5;
+  color: var(--color-white);
+  border-radius: 4px;
+  box-shadow: 0px, 4px
+  rgba(0, 0, 0, 0.15);
+ padding: 16px 32px;
+ margin-bottom: 24px;
+
+}
+.modal-form-text {
+  font-size: 12px;
+  line-height: 1.33; 
+   letter-spacing: 0.04em;
+  color: #8E8F99;
+}
+.modal-form-tx {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color:  #8E8F99;;
 }
